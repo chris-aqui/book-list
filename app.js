@@ -12,7 +12,7 @@ class Book {
 //  handle UI task
 class UI {
   static displayBook() {
-    const books = Store.getBooks;
+    const books = Store.getBooks();
     // loop over each book in local storage and make a table row
     books.forEach(book => UI.addBookToList(book));
   }
